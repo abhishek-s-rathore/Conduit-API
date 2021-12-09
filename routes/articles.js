@@ -35,7 +35,7 @@ router.get('/feed', auth.verifyToken, async (req, res, next) => {
 });
 
 //List Articles  (Optional Authentication)
-router.get('/', authorizeOptional, async (req, res, next) => {
+router.get('/', auth.authorizeOptional, async (req, res, next) => {
   let id = req.user ? req.user.userId : false;
   var limit = 20,
       skip = 0;
