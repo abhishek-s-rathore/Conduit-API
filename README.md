@@ -1,5 +1,9 @@
 # Endpoints
 
+## Live Link For API
+
+https://conduit-api-v1.herokuapp.com
+
 ### Authentication Header:
 
 You can read the authentication header from the headers of the request
